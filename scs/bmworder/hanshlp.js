@@ -106326,7 +106326,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
 ┇ _ᴠᴇʀꜱɪᴏɴ_ : *_7.1.0_*     
 ┇ _ᴘʟᴀᴛғᴏʀᴍ_ : *_ʟɪɴᴜx_*
 ┇ _ᴅᴇᴠ_ : *_ʜᴀɴsᴛᴢ-ᴛᴇᴄʜ_*
-┇ _ʀᴀᴍ_ : *_20GB.14GB_*
+┇ _ʀᴀᴍ_ : *_1TB.14GB_*
 ┇ _ᴅᴀɪʟʏ ᴜsᴇʀs_ : *${forks_count}*
 ┇ _ᴄʀᴇᴀᴛᴇᴅ ᴏɴ_ : *${new Date(created_at).toLocaleDateString()}*
 ╚═════ஜ۩۞۩ஜ═════╝
@@ -106383,8 +106383,8 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                  name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "📽 HANSTZ-TECH FOR MORE INFO",
-                    url: 'https://ibrahim-adams.vercel.app/Deploy.html',
+                    display_text: "🤖 HANSTZ-TECH FOR MORE INFO",
+                    url: 'https://wa.me/255756530143?text=Hi+YESSERTECH+I+Need+Bot',
                   }),
                 },
                 {
@@ -106409,11 +106409,11 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
     await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
       messageId: repoMessage.key.id,
     });
-    await m.React('🇹🇿');
+    await m.React('🚀');
   } catch (error) {
     console.error('Error processing your request:', error);
     m.reply('Error processing your request.');
-    await m.React('🇹🇿');
+    await m.React('🚀');
   }
 };
 
