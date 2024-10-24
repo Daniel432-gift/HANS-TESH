@@ -106384,7 +106384,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                  name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: "🤖 HANSTZ-TECH FOR MORE INFO",
-                    url: 'https://wa.me/255756530143?text=Hi+YESSERTECH+I+Need+Bot',
+                    url: 'https://wa.me/255756530143?text=Hi+HANSTECH+I+NEED+A+BOT',
                   }),
                 },
                 {
@@ -106409,11 +106409,11 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
     await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
       messageId: repoMessage.key.id,
     });
-    await m.React('🚀');
+    await m.React('💯');
   } catch (error) {
     console.error('Error processing your request:', error);
     m.reply('Error processing your request.');
-    await m.React('🚀');
+    await m.React('💯');
   }
 };
 

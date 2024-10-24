@@ -12,16 +12,15 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'hansuptime', 'we hans'].includes(cmd)) {
 
-  const uptimeMessage = `*NIPO ONLINE KAKA UNA SHANGAA😜*
+  const uptimeMessage = `*HANS-MD-IS-ALIVE YAH NIKO ONLINE BRO😜*
 
-╔════════ஜ۩۞۩ஜ═══════════╗
-┇  HANS-MD-IS-WACHING-TO-YOU 
+╔═══════════ஜ۩۞۩ஜ═════════════╗
+┇  HANS-MD-IS-ACTIVE-NOW-AND-ATHOR-TIME
 ┇ *${days} Day*
 ┇ *${hours} Hour*
 ┇ *${minutes} Minute*
 ┇ *${seconds} Second*
-┇
-╚════════ஜ۩۞۩ஜ═══════════╝
+╚═══════════ஜ۩۞۩ஜ═════════════╝
 `;
 
   const buttons = [
