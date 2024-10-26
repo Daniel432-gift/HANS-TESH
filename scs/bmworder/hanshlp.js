@@ -106300,7 +106300,7 @@ const searchRepo = async (m, Matrix) => {
   const validCommands = ['menu', 'hanstz', 'list'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://github.com/HANSTZ3/HANS-MD-V1`;
+    const repoUrl = `https://github.com/HANSTZ3/HANS-MD`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -106321,7 +106321,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
       owner,
     } = repoData;
 
-    const messageText = `╔═════ஜ۩۞۩ஜ═════╗
+    const messageText = `╔═════ஜ😎ஜ═════╗
 ┇ _ʙᴏᴛ ɴᴀᴍᴇ_ : *_ʜᴀɴs ᴍᴅ_*
 ┇ _ᴠᴇʀꜱɪᴏɴ_ : *_7.1.0_*     
 ┇ _ᴘʟᴀᴛғᴏʀᴍ_ : *_ʟɪɴᴜx_*
@@ -106329,7 +106329,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
 ┇ _ʀᴀᴍ_ : *_1TB.14GB_*
 ┇ _ᴅᴀɪʟʏ ᴜsᴇʀs_ : *${forks_count}*
 ┇ _ᴄʀᴇᴀᴛᴇᴅ ᴏɴ_ : *${new Date(created_at).toLocaleDateString()}*
-╚═════ஜ۩۞۩ஜ═════╝
+╚═════ஜ😎ஜ═════╝
     `;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
@@ -106344,7 +106344,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
               text: messageText,
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: '🌏𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🌏\n\n𝐌𝐀𝐃𝐄 𝐁𝐘 HANSTZ-TECH',
+              text: '🇹🇿𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🇹🇿\n\n𝐌𝐀𝐃𝐄 𝐁𝐘 HANSTZ-TECH',
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
@@ -106362,22 +106362,22 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                   name: 'quick_reply',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "📜 COMMAND LIST",
+                    display_text: "🇹🇿 COMMAND LIST",
                     id: ".command",
                   }),
                 },
                  {
                   name: 'quick_reply',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "⏳ PING",
+                    display_text: "🚀 PING",
                     id: ".ping",
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "📂 REPO",
-                    url: 'https://github.com/HANSTZ3/HANS-MD-V1',
+                    display_text: "📂 WHATSAPP GROUP",
+                    url: 'https://chat.whatsapp.com/F35S3CfgvPZ9VaOPrLmRoW',
                   }),
                 },
                 {
@@ -106390,8 +106390,8 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "🛰 WHATSAPP CHANNEL",
-                    url: 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31',
+                    display_text: "📡 WHATSAPP CHANNEL",
+                    url: 'https://whatsapp.com/channel/0029VasiOoR3bbUw5aV4qB31',
                   }),
                 },
               ],

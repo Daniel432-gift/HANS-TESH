@@ -10,7 +10,7 @@ const alive = async (m, Matrix) => {
   
   const prefix = /^[\\/!#.]/gi.test(m.body) ? m.body.match(/^[\\/!#.]/gi)[0] : '/';
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
-    if (['alive', 'hansuptime', 'we hans'].includes(cmd)) {
+    if (['alive', 'hansuptime', 'uptime'].includes(cmd)) {
 
   const uptimeMessage = `*ℍ𝔸ℕ𝕊-𝕄𝔻-𝕆ℕ𝕃𝕀ℕ𝔼-𝔸ℕ𝕐-𝕋𝕀𝕄𝔼-𝕌ℕ𝔸𝕊ℍ𝔸ℕ𝔾𝔸𝔸 𝔸𝕌 😎*
 
@@ -28,7 +28,7 @@ const alive = async (m, Matrix) => {
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
-          display_text: "Ping🔲🚀",
+          display_text: "Ping🚀",
           id: `${prefix}ping`
         })
       }
