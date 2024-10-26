@@ -2,7 +2,7 @@ const { zokou } = require("../framework/zokou");
 var mumaker = require("mumaker");
 zokou({ nomCom: "hacker",
     categorie: "Logo", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
-    const { prefixe, arg, ms, repondre } = commandeOptions;
+    const prefix = config.PREFIX;
     if (!arg || arg == "") {
         repondre("*__Exemple : * " + prefixe + "hacker yesser");
         return;
