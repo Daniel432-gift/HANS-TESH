@@ -12,22 +12,23 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'hansuptime', 'we hans'].includes(cmd)) {
 
-  const uptimeMessage = `*HANS-MD-IS-ALIVE YAH NIKO ONLINE BRO😜*
+  const uptimeMessage = `*ℍ𝔸ℕ𝕊-𝕄𝔻-𝕆ℕ𝕃𝕀ℕ𝔼-𝔸ℕ𝕐-𝕋𝕀𝕄𝔼-𝕌ℕ𝔸𝕊ℍ𝔸ℕ𝔾𝔸𝔸 𝔸𝕌 😎*
 
-╔═══════════ஜ۩۞۩ஜ═════════════╗
-┇  HANS-MD-IS-ACTIVE-NOW-AND-ATHOR-TIME
+╔═══════════ஜ۩۞۩ஜ═══════════╗
+┇  ℍ𝔸ℕ𝕊-𝕄𝔻-𝕀𝕊-𝕆ℕ𝕃𝕀ℕ𝔼-𝕁𝕌𝕊𝕋-𝕋𝕐ℙ-.𝕄𝔼ℕ𝕌 😎
 ┇ *${days} Day*
 ┇ *${hours} Hour*
 ┇ *${minutes} Minute*
 ┇ *${seconds} Second*
-╚═══════════ஜ۩۞۩ஜ═════════════╝
+┇𝕂𝔸𝕄𝔸 𝕂𝔸𝕎𝔸 𝕄𝔹𝕆ℕ𝔾𝕆 𝔸ℕ𝔸 𝔼𝕃𝔼𝕎𝔸 😹
+╚══════════ஜ۩۞۩ஜ════════════╝
 `;
 
   const buttons = [
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
-          display_text: "Ping⏳",
+          display_text: "Ping🔲🚀",
           id: `${prefix}ping`
         })
       }
@@ -62,7 +63,7 @@ const alive = async (m, Matrix) => {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '255717748823',
-                  newsletterName: "HANS MD",
+                  newsletterName: "ℍ𝔸ℕ𝕊-𝕄𝔻",
                   serverMessageId: 143
                 }
               }
