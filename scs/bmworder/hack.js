@@ -1,20 +1,20 @@
-const { zokou } = require("../framework/zokou");
-const moment = require("moment-timezone");
-const { default: axios } = require('axios');
+import axios from 'axios';
+import config from '../../config.cjs';
 
-const isHackCommandEnabled = true; // Assurez-vous que cette variable est correctement définie
+const imdb = async (m, gss) => {
+  try {
+    const prefix = config.PREFIX;
+const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+const text = m.body.slice(prefix.length + cmd.length).trim();
 
-zokou({ nomCom: "hack", categorie: "mods", reaction:"🕷️", active: isHackCommandEnabled }, async (dest, zk, commandeOptions) => {
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
-  const prefix = config.PREFIX;
-  const message = arg.join(' ');
-  // hack
-    const { repondre, arg, ms } = commandeOptions;
+    const validCommands = ['hack'];
 
-    await zk.sendMessage(dest, "```yesser_md Injecting malware```");
+    if (!validCommands.includes(cmd)) return;
+
+    await zk.sendMessage(dest, "```hans_md Injecting malware```");
     await sleep(30000);
 
-    await zk.sendMessage(dest, "```yesser into device \n 0%```");
+    await zk.sendMessage(dest, "```hans into device \n 0%```");
     await sleep(30000);
 
     await zk.sendMessage(dest, "```transfering photos \n █ 10%```");

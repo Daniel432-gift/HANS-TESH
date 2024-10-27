@@ -1,8 +1,15 @@
-const { zokou } = require("../framework/zokou");
-var mumaker = require("mumaker");
-zokou({ nomCom: "hacker",
-    categorie: "Logo", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
+import config from '../../config.cjs';
+
+const tagall = async (m, gss) => {
+  try {
+    const botNumber = await gss.decodeJid(gss.user.id);
     const prefix = config.PREFIX;
+const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+const text = m.body.slice(prefix.length + cmd.length).trim();
+    
+    const validCommands = ['hacker'];
+    if (!validCommands.includes(cmd)) return;
+    
     if (!arg || arg == "") {
         repondre("*__Exemple : * " + prefixe + "hacker yesser");
         return;

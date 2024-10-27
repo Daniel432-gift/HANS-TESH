@@ -106344,7 +106344,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
               text: messageText,
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: '🇹🇿𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🇹🇿\n\n𝐌𝐀𝐃𝐄 𝐁𝐘 HANSTZ-TECH',
+              text: '🇹🇿𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🇹🇿\n\n𝐌𝐀𝐃𝐄 𝐁𝐘 ℍ𝔸ℕ𝕊𝕋ℤ-𝕋𝔼ℂℍ',
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
@@ -106376,8 +106376,8 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: "📂 WHATSAPP GROUP",
-                    url: 'https://chat.whatsapp.com/F35S3CfgvPZ9VaOPrLmRoW',
+                    display_text: "🪐 WHATSAPP GROUP",
+                    url: "https://chat.whatsapp.com/F35S3CfgvPZ9VaOPrLmRoW",
                   }),
                 },
                 {
