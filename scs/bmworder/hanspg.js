@@ -13,7 +13,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
 
 
-    const text = `*ʜᴀɴs-ᴍᴅ-sᴘᴇᴇᴅ-ɪs 99${responseTime.toFixed(2)}9 ms*`;
+    const text = `*ʜᴀɴs-ᴍᴅ-sᴘᴇᴇᴅ-ɪs 88${responseTime.toFixed(2)}8 ms*`;
     sock.sendMessage(m.from, { text }, { quoted: m });
   }
 }

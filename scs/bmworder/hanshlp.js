@@ -106321,7 +106321,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
       owner,
     } = repoData;
 
-    const messageText = `╔═════ஜ😎ஜ═════╗
+    const messageText = `╔═════ஜ💯ஜ═════╗
 ┇ _ʙᴏᴛ ɴᴀᴍᴇ_ : *_ʜᴀɴs ᴍᴅ_*
 ┇ _ᴠᴇʀꜱɪᴏɴ_ : *_7.1.0_*     
 ┇ _ᴘʟᴀᴛғᴏʀᴍ_ : *_ʟɪɴᴜx_*
@@ -106329,7 +106329,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
 ┇ _ʀᴀᴍ_ : *_1TB.14GB_*
 ┇ _ᴅᴀɪʟʏ ᴜsᴇʀs_ : *${forks_count}*
 ┇ _ᴄʀᴇᴀᴛᴇᴅ ᴏɴ_ : *${new Date(created_at).toLocaleDateString()}*
-╚═════ஜ😎ஜ═════╝
+╚═════ஜ💯ஜ═════╝
     `;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
